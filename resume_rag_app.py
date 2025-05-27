@@ -1,5 +1,5 @@
 import streamlit as st
-import fitz  # PyMuPDF
+import pdfplumber  # PyMuPDF
 from langchain_community.document_loaders import PyMuPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import OllamaEmbeddings
@@ -23,7 +23,7 @@ jd_text = ""
 if jd_file:
     with open("temp_jd.pdf", "wb") as f:
         f.write(jd_file.read())
-    jd_doc = fitz.open("temp_jd.pdf")
+    jd_doc = pdfplumber.open("temp_jd.pdf")
     for page in jd_doc:
         jd_text += page.get_text()
 
