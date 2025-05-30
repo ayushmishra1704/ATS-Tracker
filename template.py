@@ -21,13 +21,13 @@ list_of_files=[
     "src/exception/exception.py",
     "tests/unit/__init__.py",
     "tests/integration/__init__.py",
-    "init_setup.sh",
+    "init_setup.sh", ## initialise the setup
     "requirements.txt",
     "requirements_dev.txt",
     "setup.py",
     "setup.cfg",
     "pypoject.toml",
-    "tox.ini",
+    "tox.ini", ## file is used for testing
     "experiment/experiments.ipynb"
 ]
 
