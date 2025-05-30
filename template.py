@@ -5,7 +5,7 @@ from pathlib import Path ## create a system compatible path
 print(Path("a\\b\\c.txt"))
 list_of_files=[
     
-    ".github/workflows/.gitkeep", # we can keep gitkeep file if the file name is not decided
+    ".github/workflows/.gitkeep", # we can keep gitkeep file if the file name is not decided, also used for continous integration.
     "src/__init__.py",
     "src/components/__init__.py",
     "src/components/data_ingestion.py",
@@ -18,7 +18,7 @@ list_of_files=[
     "src/utils/__init__.py",
     "src/utils/utils.py",
     "src/logger/logging.py",
-    "src/exception/exception",
+    "src/exception/exception.py",
     "tests/unit/__init__.py",
     "tests/integration/__init__.py",
     "init_setup.sh",
